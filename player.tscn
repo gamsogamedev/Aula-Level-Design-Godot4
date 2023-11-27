@@ -1,10 +1,11 @@
-[gd_scene load_steps=31 format=3 uid="uid://tkjippyut5hd"]
+[gd_scene load_steps=32 format=3 uid="uid://tkjippyut5hd"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_2qj13"]
 [ext_resource type="Texture2D" uid="uid://dqng6kggbums6" path="res://Fall (32x32).png" id="2_qgsw4"]
 [ext_resource type="Texture2D" uid="uid://b1xfwxjatgo26" path="res://Idle (32x32).png" id="3_nxbuq"]
 [ext_resource type="Texture2D" uid="uid://dcuw6fvv2k38s" path="res://Jump (32x32).png" id="4_63ebj"]
 [ext_resource type="Texture2D" uid="uid://cr3d3p1icq5se" path="res://Run (32x32).png" id="5_jvee0"]
+[ext_resource type="Script" path="res://PlayerCamera2D.gd" id="6_v8c5v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sfywn"]
 atlas = ExtResource("3_nxbuq")
@@ -212,3 +213,15 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, 3)
 shape = SubResource("RectangleShape2D_phfiu")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(0, -30)
+limit_left = 25
+limit_bottom = 3025
+drag_horizontal_enabled = true
+drag_vertical_offset = -1.0
+drag_left_margin = 0.06
+drag_right_margin = 0.06
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("6_v8c5v")
