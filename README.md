@@ -1,9 +1,11 @@
 # Aula Level Design Godot GAMSo
  Versão em Godot4 da aula de level design do grupo GAMSo utilizando assets [Pixel Adventure](https://pixelfrog-assets.itch.io/pixel-adventure-1)
 
-instruções para instalar Godot4 no linux:
+instruções para instalar Godot4 no e este repositório no linux:
 
 ```bash
+git clone https://github.com/gamsogamedev/Aula-Level-Design-Godot4.git
+
 sudo apt update
 sudo apt install snapd
 
