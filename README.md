@@ -12,9 +12,9 @@ sudo apt update
 sudo apt install snapd
 
 sudo snap install core
-
 sudo snap install godot-4 --edge
-godot-4
+
+godot-4 Aula-Level-Design-Godot4/project.godot
 ```
 
 [referencia para criação da cena](https://www.youtube.com/watch?v=5V9f3MT86M8)
