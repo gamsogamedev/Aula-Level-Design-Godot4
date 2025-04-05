@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpdq3lr6p5ntb"
-path="res://.godot/imported/Appearing (96x96).png-b2063de2ce764e560d5ed342700334e8.ctex"
+path="res://.godot/imported/Appearing (96x96).png-c80256d12fce6af271c169fbe47b3115.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Appearing (96x96).png"
-dest_files=["res://.godot/imported/Appearing (96x96).png-b2063de2ce764e560d5ed342700334e8.ctex"]
+source_file="res://Sprites/Mapa/Appearing (96x96).png"
+dest_files=["res://.godot/imported/Appearing (96x96).png-c80256d12fce6af271c169fbe47b3115.ctex"]
 
 [params]
 

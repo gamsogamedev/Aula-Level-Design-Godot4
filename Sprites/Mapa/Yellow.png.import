@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1xfwxjatgo26"
-path="res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex"
+uid="uid://eerlutva14qx"
+path="res://.godot/imported/Yellow.png-49215ab06c1fd2605dbb046e7536dfc2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Idle (32x32).png"
-dest_files=["res://.godot/imported/Idle (32x32).png-eab6f8bc6cc3e2ad30a389b322c823ee.ctex"]
+source_file="res://Sprites/Mapa/Yellow.png"
+dest_files=["res://.godot/imported/Yellow.png-49215ab06c1fd2605dbb046e7536dfc2.ctex"]
 
 [params]
 

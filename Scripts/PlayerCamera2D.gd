@@ -4,5 +4,5 @@ extends Camera2D
 @export var lerp_speed: float = 1.0
 
 func _process(delta: float) -> void:
-    pass
-    #offset = offset.lerp(character_body_2d.velocity, delta * lerp_speed)
+	pass
+	#offset = offset.lerp(character_body_2d.velocity, delta * lerp_speed)
