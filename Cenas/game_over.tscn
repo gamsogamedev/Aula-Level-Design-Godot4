@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://dctxhc4vln2i"]
+
+[ext_resource type="Script" uid="uid://d4fvpm8m1b4oe" path="res://Scripts/game_over.gd" id="1_7y2ld"]
+[ext_resource type="Texture2D" uid="uid://eerlutva14qx" path="res://Sprites/Mapa/Yellow.png" id="1_18dpl"]
+
+[node name="GameOver" type="Control" unique_id=111343202]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 575.0
+offset_top = 322.0
+offset_right = 615.0
+offset_bottom = 362.0
+script = ExtResource("1_7y2ld")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=341378804]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=202530573]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -196.0
+offset_top = -42.5
+offset_right = 196.0
+offset_bottom = 42.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=1748981042]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Você chegou até o fim!"
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1528365698]
+layout_mode = 2
+text = "Reiniciar"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1822414466]
+scale = Vector2(18, 10)
+texture = ExtResource("1_18dpl")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=982563101]
+zoom = Vector2(2, 2)
+
+[connection signal="button_down" from="CanvasLayer/VBoxContainer/Button" to="." method="_on_button_button_down"]
