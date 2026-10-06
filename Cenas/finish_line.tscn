@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://be7ofch1k1g33"]
+
+[ext_resource type="Texture2D" uid="uid://ch5cew2xyljrf" path="res://Sprites/Mapa/icon.svg" id="1_cp5sb"]
+[ext_resource type="Script" uid="uid://gcr772vyy8w1" path="res://Scripts/finish_line.gd" id="1_nf0l8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrp85"]
+size = Vector2(113, 111)
+
+[node name="FinishLine" type="Node2D" unique_id=1276187415]
+z_index = 1
+script = ExtResource("1_nf0l8")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2019982007]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_cp5sb")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1637417521]
+collision_layer = 8
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=256779826]
+position = Vector2(63.5, 64.5)
+shape = SubResource("RectangleShape2D_wrp85")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
